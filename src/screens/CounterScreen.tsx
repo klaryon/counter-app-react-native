@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import { Fab } from '../components/Fab';
+import {Fab} from '../components/Fab';
 
 export const CounterScreen = () => {
   const [contador, setContador] = useState(10);
@@ -8,7 +8,8 @@ export const CounterScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Counter: {contador}</Text>
-      <Fab title="+1"/>
+      <Fab title="+1" position='br' onPress={() => setContador(contador + 1)} />
+      <Fab title="-1" position='bl' onPress={() => setContador(contador - 1)} />
     </View>
   );
 };
