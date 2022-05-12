@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Button, Text, View} from 'react-native';
+import {Button, Text, TouchableOpacity, View} from 'react-native';
 
 export const CounterScreen = () => {
   const [contador, setContador] = useState(10);
@@ -9,7 +9,11 @@ export const CounterScreen = () => {
       <Text style={{textAlign: 'center', fontSize: 40, top: -15}}>
         Counter: {contador}
       </Text>
-      <Button title="Click" onPress={() => setContador(contador + 1)} />
+      <TouchableOpacity onPress={() => setContador(contador + 1)}>
+        <View style={{backgroundColor: 'salmon', borderRadius: 100}}>
+          <Text>Click Me!</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };
