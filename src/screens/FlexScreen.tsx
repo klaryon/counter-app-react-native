@@ -17,13 +17,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#28C4D9',
   },
   box1: {
-    flex: 1,
+    flex: 3, // 3 + 2 + 2 = 6
     borderWidth: 2,
     borderColor: 'white',
     fontSize: 30,
   },
   box2: {
-    flex: 1,
+    flex: 2, // 3 + 2 + 2 = 6
     borderWidth: 2,
     borderColor: 'white',
     fontSize: 30,
